@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
           _backgroundColor = getRandomColor();
           _isTextWhite = (_backgroundColor.red * weightsArray.first +
                   _backgroundColor.green * weightsArray[1] +
-                  _backgroundColor.blue * weightsArray[2]) >
+                  _backgroundColor.blue * weightsArray[2]) <
               weightsArray.last;
         });
       },
